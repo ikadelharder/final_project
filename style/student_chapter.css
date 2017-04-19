@@ -1,2 +1,6 @@
 /* it is totally okay for this to be completely empty right now, add what you need */
-#mapid { height: 180px; }
+html, body, #mapid {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }

@@ -4,3 +4,9 @@ html, body, #mapid {
         margin: 0;
         padding: 0;
       }
+
+#logo {
+    position:absolute;
+    z-index:1;
+    top:5px;
+    right:5px;}

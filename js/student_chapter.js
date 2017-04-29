@@ -6,12 +6,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 maxZoom: 18
             }).addTo(map);
     
-var chptLocations = L.esri.featureLayer({
+//var geolMap = L.esri.dynamicMapLayer({
+//url:"http://certmapper.cr.usgs.gov/arcgis/rest/services/ geology/northamerica_gmna/MapServer", 
+//    opacity: .8
+//}).addTo(map);
+//    
+//L.control.layers(map, geolMap).addTo(map)
+    
+ var chptLocations = L.esri.featureLayer({
     url: "http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Student_Chpt_Points/FeatureServer/0"
   }).addTo(map);
     
     chptLocations.bindPopup(function (layer) {
-                            return L.Util.template('<p><b>{College}</b><br>{Location}<br>{Founded}', layer.feature.properties);
+                            return L.Util.template('<p><b>{College}</b><br>{Location}<br>{Founded}<br><a href="http://aipg.org/studentchapters"> http://aipg.org/studentchapters</a>', layer.feature.properties);
                             });
 
 })

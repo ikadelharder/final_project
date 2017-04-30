@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-            var map = L.map('map').setView([38.0000, -97.0000], 5);
+            var map = L.map('map').setView([38.0000, -97.0000], 4);
             var lightBase = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaW1raCIsImEiOiJjaXpxY3hldzAwMHc3MnFueWlxdHM3dm1uIn0.gAsO-CCt32aUQ9lRuDoYwA', {
                 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
                 maxZoom: 18
@@ -10,6 +10,8 @@ var geolMap = L.esri.dynamicMapLayer({
 url:"http://certmapper.cr.usgs.gov/arcgis/rest/services/ geology/northamerica_gmna/MapServer", 
     opacity: .8
 }).addTo(map);
+    
+
 
 var baseMaps = {
     "Basemap": lightBase
@@ -30,3 +32,20 @@ chptLocations.bindPopup(function (layer) {
     });
 
 })
+
+function myFunction(){    document.getElementById("myDropdown").classList.toggle("show");
+}
+    
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

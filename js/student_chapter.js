@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 map.zoomControl.setPosition("topright")
     
 var geolMap = L.esri.dynamicMapLayer({
-url:"http://certmapper.cr.usgs.gov/arcgis/rest/services/ geology/northamerica_gmna/MapServer", 
+url:"http://certmapper.cr.usgs.gov/arcgis/rest/services/geology/northamerica_gmna/MapServer", 
     opacity: .8
 }).addTo(map);
     

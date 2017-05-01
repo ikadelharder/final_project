@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
                 maxZoom: 18
             }).addTo(map);
+
+map.zoomControl.setPosition("topright")
     
 var geolMap = L.esri.dynamicMapLayer({
 url:"http://certmapper.cr.usgs.gov/arcgis/rest/services/ geology/northamerica_gmna/MapServer", 
     opacity: .8
 }).addTo(map);
     
-
-
 var baseMaps = {
     "Basemap": lightBase
     };

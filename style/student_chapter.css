@@ -1,0 +1,67 @@
+/* it is totally okay for this to be completely empty right now, add what you need */
+html, body, #map {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+a {
+    text-decoration: none;
+}
+
+.dropbtn {
+    background-color: rgba(255,255,255,0.6);
+    font-family: serif;
+    color: black;
+    padding: 8px;
+    font-size: 36px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    z-index: 99999;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 99999;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(255,255,255,0.6);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99999;
+}
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 99999;
+}
+
+.dropdown-content p:hover {
+    z-index: 99999;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 99999;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(255,255,255,0.6);
+    z-index: 99999;
+}
+
+#logo {
+    position:absolute;
+    z-index:9999;
+    left: 20px;
+    bottom: 10px;
+}
